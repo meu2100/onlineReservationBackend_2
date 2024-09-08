@@ -1,0 +1,38 @@
+<form action="/orders" method="POST"> 
+  <div class="mb-4 text-center">
+    <h1 class="h3 font-weight-normal mb-3">Create Order</h1>
+  </div>
+  <div class="form-row mb-3"></div>
+  <label class="form-label" for="timestamp">預約時間</label>
+  <input class="form-control" type="datetime-local" name="timestamp" id="timestamp" placeholder="Choose time"required>
+</div>
+<div class="form-row mb-3"></div>
+  <label class="form-label" for="serviceId">服務</label>
+  <input class="form-control" type="number" name="serviceId" id="serviceId" placeholder="Enter serviceId"required>
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="staff">工作人員</label>
+  <input class="form-control" type="number" name="staff" id="staff" placeholder="Enter staff"required> 
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="name">預約者姓名</label>
+  <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required> 
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="gender">預約者性別</label>
+  <input class="form-control" type="text" name="gender" id="gender" placeholder="Enter gender" required> 
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="phone">預約者電話</label>
+  <input class="form-control" type="tel" name="phone" id="phone" placeholder="Enter phone number" required> 
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="email">預約者Email</label>
+  <input class="form-control" type="email" name="email" id="email" placeholder="Enter email" required>
+</div>
+<div class="form-row mb-3">
+  <label class="form-label" for="remark">備註</label>
+  <textarea class="form-control" id="remark" name="remark" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>

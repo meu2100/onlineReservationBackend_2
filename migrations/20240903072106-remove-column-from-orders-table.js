@@ -10,7 +10,7 @@ module.exports = {
   down: async (queryInterface, Sequelize) => {
     await queryInterface.addColumn("orders", "serviceID", {
       type: Sequelize.INTEGER,
-      allowNull: true, // 根據你的需求設置
+      allowNull: true,
     });
   },
 };
